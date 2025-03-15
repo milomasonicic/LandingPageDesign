@@ -16,7 +16,7 @@ function News() {
     ];
 
     return (
-        <div className="w-full bg-slate-50 pt-10">
+        <div className="w-full bg-slate-50 pt-10 min-h-[2200px] max-h-[2500px]">
             <div className="flex justify-between px-8 w-full items center mb-80">
                 <h2>What's new?</h2>
                 <BlurIn>News Feed</BlurIn>

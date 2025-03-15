@@ -13,12 +13,15 @@ import MiddleSection from "./Middle"
 import Component from './HeroPage'
 import Item1 from "./Item1";
 import Deliver from "./Delivery.tsx"
-import Nav from "./Navigacija";
+import Nav from "./Navigacija_copy.tsx";
 import Item from "./Scnd";
 import Land from "./LandingPage1";
 import WordsPullUp from "./Naslov1"
 import We from "./Whoarewe"
 import ParallaxText from "./Letsgrow";
+import Kontakt from "./Kontakt.tsx";
+import ContactUs from "./CountactUs.tsx";
+
 import Counter from "./Counter1"
 import SubHeader from "./SubHeader";
 import Projects from "./HeaderProjects";
@@ -53,11 +56,11 @@ function App() {
           <ParallaxText children="Lets grow together and create better world" baseVelocity={-2}></ParallaxText>  
         </div>
         <News></News>
-
+        <ContactUs></ContactUs>
        
-            
-             
-     
+       
+        
+  
     </div>
   );
   
@@ -69,6 +72,9 @@ export default App;
 
 /*
 /*
+<ContactUs></ContactUs>
+
+
  <Gallery></Gallery>
 <Thrd></Thrd>
 
