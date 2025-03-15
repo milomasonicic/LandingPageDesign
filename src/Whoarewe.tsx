@@ -7,23 +7,19 @@ export interface IAnimTextProps {
 
 function We({ delay }: IAnimTextProps) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true }); // Pokreće animaciju kada sekcija uđe u viewport
+  const isInView = useInView(ref, { once: true }); 
   const controls = useAnimation();
 
   const companies = [
-    "Bloomberg", "The New York Times", "Johns Hopkins University",
+    "We", "Worked", "With", "Best", "Companies:", "The New York Times", "Johns Hopkins University",
     "Doctors Without Borders", "Ferrero", "Product Hunt", "Serie A Tim",
-    "Sony Music", "Wolff Olins", "Volta", "Kron", "Reply",
-    "Defiance ETF", "Nextatlas", "Tignum", "Conviva",
-    "Credem", "Evooq", "CMC Markets", "Property Simple", "Slip.stream"
+    "Sony Music", "Wolff Olins", "Volta", "Kron", "Reply"
   ];
 
   const baseText = [
-    "Bloomberg", "The New York Times", "Johns Hopkins University",
+    "We", "Worked", "With", "Best", "Companies:","The New York Times", "Johns Hopkins University",
     "Doctors Without Borders", "Ferrero", "Product Hunt", "Serie A Tim",
-    "Sony Music", "Wolff Olins", "Volta", "Kron", "Reply",
-    "Defiance ETF", "Nextatlas", "Tignum", "Conviva",
-    "Credem", "Evooq", "CMC Markets", "Property Simple", "Slip.stream"
+    "Sony Music", "Wolff Olins", "Volta", "Kron", "Reply"
   ];
 
   useEffect(() => {
@@ -33,7 +29,7 @@ function We({ delay }: IAnimTextProps) {
   }, [isInView, controls]);
 
   return (
-    <div ref={ref} className="h-[300px] max-w-[1440px] p-14 bg-zinc-950 mx-auto overflow-hidden relative">
+    <div ref={ref} className="md:px-2 px-8 h-[400px] max-w-[1440px] p-14 bg-zinc-950 mx-auto overflow-hidden relative">
       
       <div className="absolute pt-8  top-0 left-0 w-full">
         {baseText.map((bs, index) => (
@@ -52,13 +48,14 @@ function We({ delay }: IAnimTextProps) {
           <motion.span
             key={company}
             className="text-xl md:text-2xl m-2 text-center text-blue-800"
-            initial={{ opacity: 0, color: "rgb(30,30,30)" }} // Skoro crna boja
+            initial={{ opacity: 0, color: "rgb(30,30,30)" }} 
             animate={controls}
             variants={{
               visible: {
                 opacity: 1,
-                color: "rgb(255,255,255)", // Bela boja prilikom otkrivanja
-                transition: { delay: index * 0.2, duration: 1.2, ease: "easeOut" } // Veći delay i sporija animacija
+                color: "rgb(255,255,255)", 
+                transition: { delay: index * 0.2, duration: 1.2, ease: "easeOut" } 
+                
               }
             }}
           >

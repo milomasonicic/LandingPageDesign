@@ -5,7 +5,7 @@ const show = { opacity: 1, display: "block" };
 const hide = { opacity: 0, transitionEnd: { display: "none" } };
 
 export default function Kontakt() {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
   return (
     <div className="flex flex-col items-center justify-center bg-slate-50 w-full h-[700px] p-6">

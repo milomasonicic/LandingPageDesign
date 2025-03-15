@@ -15,7 +15,7 @@ export default function AnimatedHeightWhenInView() {
   return (
 
    
-    <div className="bg-zinc-950 h-[650px] gap-4 w-full py-8 font-bold flex flex-wrap md:flex-row justify-center">
+    <div className="bg-zinc-950 md:h-[650px] h-auto gap-4 w-full py-8 font-bold flex flex-wrap md:flex-row justify-center">
            <GardenAi title={"SciFi Garden"} bgClass="bg-stone-50 hover:bg-zinc-800 rounded-[40%]" description={"Bringing natture and tech together"}></GardenAi>
         
            <GardenAi title={"Geometric Wonders"} bgClass="bg-zinc-900  hover:bg-stone-50 rounded-[5%]" description={"Digital solutions and much more"}></GardenAi>

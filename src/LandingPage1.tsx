@@ -100,7 +100,7 @@ function Land() {
   }, [sections.length]);
 
   return (
-    <main className="mx-auto max-w-[1440px] relative mt-12 h-[630px] overflow-hidden">
+    <main className="mx-auto max-w-[1440px] relative mt-12 h-[560px] overflow-hidden">
       <AnimatePresence>
         <motion.section
           key={current}

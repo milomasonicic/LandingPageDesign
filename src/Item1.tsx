@@ -7,10 +7,6 @@ function Item1()
     const items = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"];
     return <div className="w-[90%]">
 
-           <div className="">
-             <WordsPullUp text="Transfromations" />
-            </div> 
-
             <div className="app1">
             {items.map((item, i) => (
                 <Card1 key={i} text={item} index={i} />

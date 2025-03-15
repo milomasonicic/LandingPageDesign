@@ -26,7 +26,9 @@ export default function WordsPullUp({ text }: { text: string }) {
   };
 
   return (
-    <div className="flex bg-zinc-950 mx-auto max-w-[1440px] overflow-hidden mx-auto border-b border-slate-50">
+    <div className="flex mb-20 
+    border-b 
+    gap-x-6 h-[100px] bg-zinc-950 mx-auto w-full px-2 overflow-hidden mx-auto">
       {splittedText.map((current, i) => (
         <motion.div
           key={i}
